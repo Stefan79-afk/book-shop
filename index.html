@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Shop</title>
     <link rel="icon" href="images/logo.png" />
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav>
             <ul>
                 <li>
-                    <img src="images/nav-logo.png" width="400" height="100" alt="Book Shop">
+                    <img src="images/nav-logo.png" width="200" height="100" alt="Book Shop">
                 </li>
                 <li><a href="">Home</a></li>
                 <li><a href="#">About</a></li>
@@ -40,7 +41,7 @@
             <h2>Join the Book Haven Community</h2>
             <p>Sign up for our newsletter and be the first to hear about special offers, author events, and much more!</p>
             <p>Happy reading!</p>
-            <table>
+            <table id="calculator">
                 <thead>
                     <tr>
                         <th>Book</th>
@@ -53,25 +54,26 @@
                         <td>Alice in the Wonderland</td>
                         <td>$10.00</td>
                         <td>
-                            <input type="text" id="alice-wonderland">
+                            <input type="number" min="0" id="alice-wonderland">
                         </td>
                     </tr>
                     <tr>
                         <td>Snow White</td>
                         <td>$13.00</td>
                         <td>
-                            <input type="text" id="snow-white">
+                            <input type="number" min="0" id="snow-white">
                         </td>
                     </tr>
                     <tr>
                         <td>Rapunzel</td>
                         <td>$15.00</td>
                         <td>
-                            <input type="text" id="rapunzel">
+                            <input type="number" min="0" id="rapunzel">
                         </td>
                     </tr>
                 </tbody>
             </table>
+            <p id="total">Total: </p>
         </article>
         <aside>
             <img src="images/logo.png" alt="Book Shop Logo" width="200" height="200" />

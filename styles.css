@@ -1,0 +1,93 @@
+:root {
+    --background-color: #333;
+    --text-color: #fff;
+    --navbar-color: #141946;
+    --font-family: Arial, Helvetica, sans-serif;
+    --link-color: #239090;
+    --calculator-background: #666;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+header { 
+    background-color: var(--navbar-color);
+    height: 15%;
+    padding: 0.5em;
+}
+
+header > nav > ul {
+    margin: 0;
+    padding: 0;
+}
+
+header > nav > ul > li {
+    display: inline-block;
+    list-style: none;
+    vertical-align: middle;
+    margin: 0 0.5em 0 0.5em;
+}
+
+header > nav > ul > li > a:hover,
+header > nav > ul > li > a:visited,
+header > nav > ul > li > a:focus
+header > nav > ul > li > a:active,
+header > nav > ul > li > a {
+    color: var(--link-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+main {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1em;
+    padding: 0.5em;
+}
+
+main li {
+    margin: 0.5em;
+}
+
+#calculator {
+    background-color: var(--calculator-background);
+    border-radius: 0.5em;
+    padding: 0.75em;
+}
+
+#calculator td {
+    border: 1px solid var(--text-color);
+    margin: 1px;
+    padding: 0.25em;
+}
+
+#calculator input {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+
+#calculator tr {
+    margin: 0.5em;
+}
+
+aside {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    background-color: var(--navbar-color);
+    text-align: center;
+    padding: 1em;
+}
+
