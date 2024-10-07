@@ -44,13 +44,6 @@ header > nav > ul > li > a {
     font-weight: 600;
 }
 
-main {
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 1em;
-    padding: 0.5em;
-}
-
 main li {
     margin: 0.5em;
 }
@@ -89,5 +82,24 @@ footer {
     background-color: var(--navbar-color);
     text-align: center;
     padding: 1em;
+}
+
+@media (min-width: 796px) {
+    main {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 1em;
+        padding: 0.5em;
+    }
+
+    html {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 796px) {
+    html {
+        font-size: 12px;
+    }
 }
 

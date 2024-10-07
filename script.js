@@ -40,7 +40,6 @@ window.addEventListener("DOMContentLoaded", () => {
     displayTotal();
 
     const inputs = document.querySelectorAll("#calculator input");
-    console.log(inputs);
 
     inputs.forEach(input => {
         input.addEventListener("keyup", (event) => onInput(event, input));
